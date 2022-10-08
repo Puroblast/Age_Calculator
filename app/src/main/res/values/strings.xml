@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Age Calculator</string>
+    <string name="calculateView">Calculate Your</string>
+    <string name="ageView">Age</string>
+    <string name="inMinutesView">In Minutes</string>
+    <string name="selectDateBtn">Select Date</string>
+    <string name="dateView">14/9/2018</string>
+    <string name="selectedDateView">Selected Date</string>
+    <string name="totalMinutesView">101203012312</string>
+    <string name="tillDateView">In Minutes Till Date</string>
+</resources>

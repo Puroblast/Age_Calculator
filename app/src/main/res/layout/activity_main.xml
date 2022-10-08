@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calculateView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculateView"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/ageView"
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ageView"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/calculateView"
+        app:layout_constraintStart_toStartOf="@id/calculateView"
+        app:layout_constraintEnd_toEndOf="@id/calculateView"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/inMinutesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inMinutesView"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ageView"
+        app:layout_constraintStart_toStartOf="@id/ageView"
+        app:layout_constraintEnd_toEndOf="@id/ageView"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/selectDateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selectDateBtn"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/inMinutesView"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/dateView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/selectDateBtn"
+        app:layout_constraintStart_toStartOf="@id/selectDateBtn"
+        app:layout_constraintEnd_toEndOf="@id/selectDateBtn"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/selectedDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/selectedDateView"
+        android:textSize="15sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/dateView"
+        app:layout_constraintStart_toStartOf="@id/dateView"
+        app:layout_constraintEnd_toEndOf="@id/dateView"
+        />
+
+    <TextView
+        android:id="@+id/totalMinutesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/totalMinutesView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/selectedDateView"
+        app:layout_constraintStart_toStartOf="@id/selectedDateView"
+        app:layout_constraintEnd_toEndOf="@id/selectedDateView"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tillDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/tillDateView"
+        android:textSize="15sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/totalMinutesView"
+        app:layout_constraintStart_toStartOf="@id/totalMinutesView"
+        app:layout_constraintEnd_toEndOf="@id/totalMinutesView"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
